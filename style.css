@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#player {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url('spaceship.png');
+    background-size: cover;
+    transform: translateX(-50%);
+}
+
+.enemy {
+    position: absolute;
+    top: -60px;
+    width: 50px;
+    height: 50px;
+    background-image: url('enemy.png');
+    background-size: cover;
+}
+
+.bullet {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: yellow;
+}
+
+#score-board {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
